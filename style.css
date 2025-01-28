@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", serif;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    width: 100%;
+}
+
+.left {
+    width: 45%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: url(./images/drawers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.right {
+    background-color: #fff;
+    padding: 25px 25px 15px;
+
+}
+
+.right h3 {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.right .title p {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.right .bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right .bottom-right .text-bottom {
+    display: flex;
+    gap: 20px;
+}
+
+.right .bottom-right .text-bottom h4 {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 15px;
+
+}
+
+.right .bottom-right .text-bottom p {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 12px;
+}
+
+.right .bottom-right .text-bottom img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+
+.right .bottom-right button {
+    border: none;
+    background: transparent;
+    margin-left: 20px;
+}
+
+.right .bottom-right button img {
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10px;
+}
+
+.per {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.share {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 5px;
+    padding: 12px 30px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.share::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+}
+
+.share p {
+    color: var(--Light-Grayish-Blue);
+    font-size: 14px;
+    letter-spacing: 3px;
+}
